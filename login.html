@@ -14,15 +14,17 @@
     <link rel="stylesheet" href="css/lby-main.css" type="text/css" media="screen" charset="utf-8" />
 </head>
 
-<body>
-    <div class="login">
-        <div class="login-left">
-            <div class="login-img">
-                <img src="image/login/leftimg.png" >
-            </div>
-        </div>
-        <div class="login-right">
-            <div class="top-language">
+ <body id="body">
+
+        <!-- Header area -->
+        <header id="header" class="login">
+
+            <div class="header-left">
+               
+            </div> <!--  /.header-left  -->
+
+            <div class="header-right">
+                 <div class="top-language">
                 <a href="/" class="language">
                     <img src="image/login/language.png">
                         简体中文
@@ -71,11 +73,18 @@
                     </tr>
                 </table>
             </div>
-        </div>
-    </div>
-    </div>
+            </div> 
+
+        </header> <!--  /#header  -->
+
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
     <script type="text/javascript" src="js/jquery-labelauty.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+      
+
+
+        <script src="js/script.js"></script>
+
     <script>
     $(document).ready(function() {
         $(".to-labelauty").labelauty({ minimum_width: "155px" });
