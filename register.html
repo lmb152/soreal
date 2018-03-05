@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>soreal-立即注册</title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="soreal" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery-labelauty.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/lby-main.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/lib/css/htools.select.skin.css">
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-left">
+            <div class="login-img">
+                <img src="image/login/leftimg.png">
+            </div>
+        </div>
+        <div class="login-right">
+            <div class="top-language">
+                <a href="/" class="language">
+                    <img src="image/login/language.png">
+                        简体中文
+                    <img src="image/arrow.png">
+                </a>
+            </div>
+            <div class="pad-left-15">
+                <div class="login-form">
+                    <div class="form_header">
+                        <p>欢迎注册</p>
+                        <p style="font-size: 36px;">SOREAL超体空间</p>
+                    </div>
+                    <form action="" method="post" class="form" onsubmit="return check(this)">
+                    <div class="form_cont">
+                        <div class="mar-bot-22">
+                            <label>
+                                <select id="myselect">
+                                    <option>中国+86</option>
+                                    <option>中国+86</option>
+                                    <option>中国+86</option>
+                                    <option>中国+86</option>
+                                </select>
+                                
+                            </label>
+                        </div>
+                        <div class="mar-bot-22">
+                            <input type="text" placeholder="请输入手机号码" value="" required>
+                        </div>
+                        <div class="mar-bot-22">
+                            <input type="password" placeholder="登录密码" value="" required>
+                        </div>
+                        <div class="mar-bot-22">
+                            <input type="password" placeholder="确认密码" value="" required>
+                        </div>
+                        <div class="mar-bot-22">
+                            <input type="text" placeholder="动态密码" value="" required class="dynamic_input">
+                            <input type="submit" value="发送动态密码" id="dynamic">
+                        </div>
+                    </div>
+                    <div class="login_btn">
+                        <input type="submit" class="submit" value="立即注册" id="login">
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="copyRight">
+                <table height="100%">
+                    <tr>
+                        <td valign="bottom"> Copyright@2016齐乐无穷（北京）文化传媒有限公司 <span>备案登记号：京ICP备16043919号-1</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-labelauty.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".to-labelauty").labelauty({ minimum_width: "155px" });
+        $(".to-labelauty-icon").labelauty({ label: false });
+    });
+    </script>
+
+    <script src="css/lib/js/jquery.htools.select.js"></script>
+    <script type="text/javascript">
+        var $select = $("#select");
+            var $myselect = $("#myselect");
+
+            /**
+             * 初始化插件
+             */
+            $myselect.goSelectInput({
+                height: 43,
+                width: 320
+            });
+
+           
+    </script>
+</body>
+
+</html>

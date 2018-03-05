@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>soreal-欢迎登录</title>
+    <!--meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="soreal" />
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery-labelauty.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/lby-main.css" type="text/css" media="screen" charset="utf-8" />
+</head>
+
+<body>
+    <div class="login">
+        <div class="login-left">
+            <div class="login-img">
+                <img src="image/login/leftimg.png" >
+            </div>
+        </div>
+        <div class="login-right">
+            <div class="top-language">
+                <a href="/" class="language">
+                    <img src="image/login/language.png">
+                        简体中文
+                    <img src="image/arrow.png">
+                </a>
+            </div>
+            <div class="pad-left-15">
+                <div class="login-form">
+                    <div class="form_header">
+                        欢迎登录
+                    </div>
+                    <div class="log_switch">
+                        <a href="" class="account">账户登录</a>
+                        <img src="image/login/LINE.png">
+                        <a href="" class="message">短信快捷登录</a>
+                    </div>
+                    <form action="" method="post" class="form" onsubmit="return check(this)">
+                    <div class="form_cont">
+                        <div class="mar-bot-22">
+                            <input type="text" name="phone" id="phone" placeholder="手机号码" value="" required>
+                        </div>
+                        <div class="mar-bot-36">
+                            <input type="password" name="phone" id="pwd1" placeholder="登录密码" value="" required>
+                        </div>
+                    </div>
+                    <div class="login_msg">
+                        <input class="to-labelauty-icon" type="checkbox" />下次自动登录
+                        <span class="msg_right"><a href="">忘记密码？</a><a href=""> 立即注册</a></span>
+                    </div>
+                    <div class="login_btn">
+                        <input type="submit" value="登   录" name="" class="submit" placeholder="手机号码" id="login">
+                    </div>
+                    <div class="third_party msg_right">
+                        <a href=""> <img src="image/login/qq.png"></a>
+                        <a href=""> <img src="image/login/wx.png"></a>
+                        <a href=""> <img src="image/login/wb.png"></a>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="copyRight">
+                <table height="100%">
+                    <tr>
+                        <td valign="bottom"> Copyright@2016齐乐无穷（北京）文化传媒有限公司 <span>备案登记号：京ICP备16043919号-1</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-labelauty.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".to-labelauty").labelauty({ minimum_width: "155px" });
+        $(".to-labelauty-icon").labelauty({ label: false });
+    });
+    </script>
+    <script type="text/javascript">
+        function check(){
+//          姓名
+                var name = document.getElementById("name");         
+                if(name.value==''){
+                    alert('姓名不能为空');
+                    name.focus();
+                    return false;
+                }else{
+                    var vname=(/^[a-zA-Z\u4e00-\u9fa5]{2,10}$/);
+                    if (!vname.test(name.value)) {
+                        alert('姓名2-10个字，只能是中文或英文');
+                        name.focus();
+                        return false; 
+                    }
+                }                                       
+            
+//          电话
+                var phone = document.getElementById('phone');
+                if(phone.value==''){
+                    alert('电话不能为空');
+                    phone.focus();
+                    return false;
+                }else{
+                    var phone_reg = /^13[0-9]{1}[0-9]{8}$|15[0-9]{1}[0-9]{8}$|18[0-9]{1}[0-9]{8}|17[0-9]{1}[0-9]{8}$|14[0-9]{1}[0-9]{8}/;
+                    var tel_reg = /^([0-9]{3,4}-)?[0-9]{7,8}$/;
+                    if(!phone_reg.test(phone.value) && !tel_reg.test(phone.value)){
+                        alert('手机或电话号码格式不正确。如果是固定电话，必须形如(xxxx-xxxxxxxx)');
+                        phone.focus();
+                        return false;
+                    }
+                }
+                
+//          密码
+                var pwd1 = document.getElementById('pwd1');
+                if(pwd1.value==''){
+                    alert('密码不能为空');
+                    pwd1.focus();
+                    return false;
+                }else{
+                    var vpwd = /^[A-Za-z0-9]+$/;
+                    if(!vpwd.test(pwd1.value)){
+                        alert('密码错误，密码由数字和字母组成');
+                        pwd1.focus();
+                        return false;
+                    }else{
+                        if(pwd1.value.length<6){
+                            alert('密码不能少于6位');
+                            pwd1.focus();
+                            return false;
+                        }
+                    }
+                }
+//          验证密码
+                var pwd2 = document.getElementById('pwd2');
+                if(!(pwd2.value==pwd1.value)){
+                    alert('确认密码与第一次输入不同，请重新输入');
+                    pwd2.focus();
+                    return false;
+                }
+            
+//          邮箱
+                var email = document.getElementById('email');
+                if(email.value==''){
+                    alert('邮箱不能为空');
+                    email.focus();
+                    return false;
+                }else{
+                    var vemail = /^[0-9a-zA-Z]+(?:[\_\.\-][a-z0-9\-]+)*@[a-zA-Z0-9]+(?:[-.][a-zA-Z0-9]+)*\.[a-zA-Z]+$/i;
+                    if(!vemail.test(email.value)){
+                        alert('邮箱格式错误');
+                        email.focus();
+                        return false;
+                    }
+                }
+//          地址
+                var address = document.getElementById('address');
+                if(address.value==''){
+                    alert('地址不能为空');
+                    address.focus();
+                    return false;
+                }else{
+                    if(address.value.length<8){
+                        alert('不能少于8个字');
+                        address.focus();
+                        return false;
+                    }
+                }
+                
+        }
+
+    </script>
+</body>
+
+</html>

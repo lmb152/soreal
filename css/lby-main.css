@@ -1,0 +1,60 @@
+/*
+ * LABELAUTY jQuery Plugin
+ * Styles of LABELAUTY website
+ *
+ * @author: Francisco Neves (@fntneves)
+ * @website: www.francisconeves.com
+ */
+
+
+
+
+
+/*footer { text-align: center; padding-bottom: 25px; }
+footer h4 { margin-bottom: 0; margin-top: 0; line-height: 25px; font-family: "open_sans_lightregular"; font-weight: normal; font-size: 14px; }*/
+
+input.to-labelauty-icon+label {
+    display: inline-block;
+    margin-right: 6px;
+}
+
+input.to-labelauty-icon+label:last-child {
+    margin-right: 0;
+}
+
+input.labelauty+label {
+    font-size: 11px;
+}
+
+
+
+input.labelauty+label>span.labelauty-checked-image {
+    background: url(../image/input-checked.png ) no-repeat center;
+    background-size: 75%;
+
+}
+
+
+
+a.button {
+    display: table;
+    font-size: 12px;
+    border: #3498db 1px solid;
+    text-align: center;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 15px 25px;
+    color: #FFF;
+
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+
+    transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+}
+
+
+
