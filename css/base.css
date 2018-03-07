@@ -1,993 +1,1189 @@
-        @charset "UTF-8";
-
-
-
-/**
- * 
- * @authors Your Name (you@example.org)
- * @date    2018-02-28 11:09:18
- * @version $Id$
- */
-
-html,
-body {
-    padding: 0;
-    margin: 0;
-    background: #fff;
-    font-family: Microsoft Yahei;
-}
-
-@font-face {
-    font-family: PingFangSC-Regular, sans-serif;
-    font-family: Microsoft Yahei;
-
-   
-}
-
-a:link,f
-a:hover {
-    text-decoration: none;
-    color: #333;
-}
-
-.clear {
-    clear: both;
-}
-
-#sta_title {
-    font-size: 42px;
-    text-align: center;
-    color: #333;
-    margin-top: 100px;
-}
-
-.siteinfoLegal {
-    padding: 0 30px;
-}
-
-.siteinfoLegal .sor_content li {
-    font-size: 18px;
-    color: #707070;
-    line-height: 40px;
-    /* margin-bottom: 100px; */
-}
-
-.siteinfoLegal .sor_content p {
-    font-size: 18px;
-    color: #707070;
-    line-height: 40px;
-    margin-bottom: 100px;
-}
-
-.siteinfoLegal .sor_content ul li {
-    list-style: square;
-    margin-left: 20px;
-}
-
-.about_work {
-    background-image: url('../image/BG2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.rec-img {
-    position: relative;
-    margin-right: 15px;
-}
-
-.three-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.recruit .rec_city {
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-.recruit .rec_post {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.recruit .rec_work {
-    margin-top: 20px;
-}
-
-.recruit .rec_work li {
-    font-size: 18px;
-    line-height: 35px;
-}
-
-.recruit .rec_more img {
-    margin-top: 20px;
-}
-
-.marbot-80 {
-    margin-bottom: 80px;
-}
-
-.sor_content p {
-    font-size: 20px
-}
-
-body .siteinfoLegal .sor_content .text_blod {
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.siteinfoLegal .sor_content {
-
-    margin-bottom: 50px;
-}
-
-.siteinfoLegal .sor_content p {
-    font-size: 20px;
-    margin-bottom: 0;
-}
-
-.siteinfoLegal .sor_content .font-18 {
-    font-size: 18px;
-}
-
-.cont_map {
-    text-align: center;
-    margin: 0 auto;
-}
-
-@media(max-width:991px) {
-    .cont_map img {
-        width: 100%;
-    }
-}
-
-
-
-/* game */
-
-.game_banner_one,
-.game_banner_two {
-    position: relative;
-}
-
-.jw_logo {
-    position: absolute;
-    bottom: -26%;
-    left: 39%;
-    z-index: 1;
-}
-
-.game_name {
-    position: absolute;
-    top: 25%;
-    left: 10%;
-}
-
-.game_name .game_name_cn {
-    font-size: 64px;
-    color: #fff;
-    font-weight: 600;
-}
-
-.game_name .game_name_en {
-    font-size: 20px;
-    color: #fff;
-    font-weight: 600;
-    margin-bottom: 50px;
-}
-
-.game_details {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-}
-
-.game_details p {
-    font-size: 16px;
-    color: #FFF;
-}
-
-.game_details h2 {
-    font-size: 40px;
-    color: #FFbe02;
-    text-align: left
-}
-
-.game_details ul li {
-    font-size: 18px;
-    color: #fff;
-}
-
-.game_video {
-    position: absolute;
-    top: 25%;
-    right: 0%;
-    z-index: 1
-}
-
-.WJXZ {
-    padding: 8% 0;
-}
-
-.WJ_title {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.WJXZ ol {
-    line-height: 35px;
-}
-
-.WJXZ ol li {
-    list-style: none;
-    font-size: 18px;
-}
-
-
-/* game end */
-
-
-/* member */
-
-.member_cont {
-    padding-top: 70px;
-    background: #f6f6f6;
-    width: 1200px;
-    margin: 0 auto;
-}
-
-.personal_infor {
-    height: 214px;
-    border-bottom: 1px solid #333;
-}
-
-.top_msg {
-    float: right;
-    color: #787878;
-    font-size: 12px;
-    margin-right: 15px;
-}
-
-.float_left {
-    float: left
-}
-
-.huizhang li {
-    width: 100px;
-    height: 100px;
-    background: #333;
-    margin-left: 100px;
-    margin-top: 50px;
-    float: left;
-}
-
-.member_cont_date {
-    width: 1200px;
-    height: 676px;
-    background: #fff;
-}
-
-.member_list {
-
-    background: #f6f6f6;
-    width: 225px;
-    float: left;
-    height: 676px;
-}
-
-.member_list ul {
-    margin-top: 30px;
-}
-
-.member_list ul li {
-    font-size: 20px;
-}
-
-.member_list ul li {
-    font-size: 20px;
-    font-weight: normal;
-    text-align: center;
-    line-height: 50px;
-}
-
-.selected,
-.member_list ul li:hover {
-    background: url('../image/member/jdt.png');
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.date_cont {
-    background: #f6f6f6;
-    width: 971px;
-    float: right;
-    height: 676px;
-}
-
-.order_top ul {
-    background: #e2e2e2;
-    font-size: 14px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    width: 913px;
-}
-
-.order_top {
-    width: 913px;
-    height: 30px;
-    background: #e2e2e2;
-    font-size: 14px;
-    line-height: 20px;
-}
-
-.order_top ul li {
-    float: left;
-}
-
-.date_cont .order_del {
-    float: right;
-    margin-right: 26px;
-}
-
-.order_cont {
-    padding-left: 47px;
-    padding-top: 25px;
-    height: 160px;
-    background: #fff;
-}
-
-.order_cont li {
-    float: left;
-}
-
-.order_list {
-    width: 913px;
-    margin: 0 auto;
-    margin-bottom: 25px;
-}
-
-.order_img img {
-    box-shadow: 3px 3px 8px #7d7b7b;
-}
-
-.order_date {
-    margin-left: 25px;
-    line-height: 25px;
-}
-
-.order_name {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.order_city {
-    font-size: 13px;
-    font-weight: 600;
-}
-
-.order_time,
-.order_number {
-    font-size: 13px;
-    color: #fc1330;
-}
-
-.order_time span {
-    margin-left: 5px;
-}
-
-.order_price,
-.order_state,
-.order_view {
-    margin-left: 130px;
-    margin-top: 40px;
-    font-size: 14px;
-}
-
-.order_price {
-    font-weight: 600;
-}
-
-.order_state {
-    color: #fc1330;
-}
-
-
-/* member end */
-
-
-/* OrderDate */
-
-.order_date_top {
-    background: #fffdec;
-    height: 33px;
-    line-height: 33px;
-}
-
-.order_date_top li {
-    float: left;
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.order_date_top li span {
-    color: #149500;
-}
-
-.order_date_info {
-    margin-left: 47px;
-}
-
-.order_date_info li {
-    font-size: 13px;
-    line-height: 25px;
-}
-
-.order_date_info .order_date_info_name {
-    font-weight: 600;
-    font-size: 16px;
-    padding: 15px 0;
-}
-
-.order_table {
-    margin-top: 20px;
-    width: 913px;
-    text-align: center;
-}
-
-.order_table thead {
-    color: #929292;
-    background: #e2e2e2;
-    height: 33px;
-    line-height: 33px;
-    margin: 0 auto;
-    font-size: 13px;
-}
-
-.order_table tbody {
-    background: #fff;
-
-    line-height: 35px;
-    font-size: 14px;
-}
-
-.order_table tbody tr {
-    height: 90px;
-}
-.order_table tbody tr td {
-    border-right: 1px solid #e8e6e6;
-}
-.order_table tbody tr h3 {
-    font-size: 14px;
-    font-weight: 600;
-    color: #19bcf5;
-}
-
-.order_table tbody tr p {
-    font-size: 13px;
-}
-
-.order_table tbody tr span {
-    font-size: 16px;
-    font-weight: 600;
-    color: #d0021b;
-}
-
-
-/* OrderDate end */
-/* member_infor */
-.member_infor_cont{
-    padding: 35px 47px;
-    width: 913px;
-}
-.member_infor_cont li{
-    font-size: 18px ;
-    font-weight: 600;
-    margin: 20px 0;
-}
-.member_infor_cont li a {
-    font-size: 16px ;
-    color: #333;
-}
-.member_infor_cont span{
-    border-bottom: 1px dashed #b5b3b3;
-}
-.member_infor_cont input{
-    border: 0;
-        border-bottom: 1px dashed #b5b3b3;
-    background: #f6f6f6;
-    width: 680px;
-
-}
-.parit,.input-group,.part_setting{
-    float: left;
-} 
-.input-group{
-    width: 682px;
-        border: 0;
-    
-    background: #f6f6f6;
-}
-.member_infor_cont  img{
-margin-right: 30px;
-} 
-/* member_infor end */
-.Password_Setting{
-    font-size: 20px;
-    font-weight: 600;
-    margin: 57px 0;
-}
-.Password_Setting_cont{
-    font-size: 16px;
-    font-weight: 600;
-    width: 420px;
-}
-.Password_Setting_cont td{
-    text-align: right;
-}
-.mar-16{
-    margin: 16px 0;
-}
-.setting_ok{
-    background: url('../image/member/baocun.png') no-repeat;
-    line-height: 44px;
-        padding: 9px 34px;
-        color: #fff;
-        font-size: 18px;
-        font-weight: 600;
-        margin-left: 100px;
-}
-.setting_ok:hover{
-    color: #fff;
-}
-
-/* ticket */
-.ticket_name_logo{
-    font-size: 14px;
-    color: #fff
-}
-.ticket_name_dian{
-    font-size: 24px;
-    font-weight: 600;
-     color: #fff;
-     margin: 30px 0;
-}
-.ticket_name_city{
-    font-size: 13px;
-     color: #fff;
-     width: 192px;
-    
-}
-.ticket_game_img li{
-    float: left;
-    color: #fff;
-    margin: 0 15px;
-   
-}
-.ticket_game_img {
-    
-   position: absolute;
-    top: 10%;
-    left: 10%;
-}
-
-.ticket_game_txt{
-    text-align: left;
-}
-.ticket_game_image{
-    text-align: center;
-}
-.ticket_game_img li p{
-    font-size: 16px;
-    margin: 15px 0;
-}
-.ticket_game_select{
-    font-size: 18px;
-    font-weight: 600;
-}
-.game_banner .mar_top_50{
-    margin-top: 50px;
-}
-.bor_bot_tick{
-
-    border-bottom: 1px solid #2c4c6b;
-}
-.super_pass{
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    color: #fff;
-    width: 1025px;
-} 
-.tick_details_post{
-    position: absolute;
-    top: 78%;
-    left: 10%;
-}
-.super_pass h3{
-    font-size: 36px;
-    font-weight: 600;
-}
-.super_pass p{
-    font-size: 18px;
-    font-weight: 600;
-    margin: 15px 0;
-}
-.tick_details li{
-    float: left;
-}
-.tick_cont{
-    margin-top: 50px;
-}
-.tick_cont_right{
-   
-}
-.tick_cont_left ul li{
-    margin-top: 50px;
-}
-.tick_cont_left ul li a{
-    border: 1px solid #12c2fa;
-    padding: 9px 15px;
-    border-radius: 8px;
-    margin: 0 20px
-}
-.tick_cont_left ul li p{
-   float: left;
-   margin-bottom: 40px
-}
-.tick_cont_BG{
-    position: relative;
-}
-.tick_cont_news{
-    position: absolute;
-    top: 4%;
-    left: 7%;
-    color: #fff;
-    width: 350px;
-}
-.tick_cont_news_one img{
-box-shadow: 4px 4px 8px #333;
-margin-right: 10px
-}
-.tick_cont_news_one li{
-float: left;
-margin-left: 10px;
-line-height: 20px;
-}
-.tick_cont_news_one li h3{
-font-size: 24px;
-font-weight: 600;
-}
-.tick_cont_news_one li h5{
-font-size: 14px;
-font-weight: 600;
-margin-top: 10px;
-margin-bottom: 25px;
-}
-.tick_cont_news_one li p{
-font-size: 13px;
-font-weight: 600;
-color: #e5e2e2;
-
-}
-.tick_cont_news_two {
-font-size: 13px;
-
-color: #e5e2e2;
-line-height: 30px;
-border-bottom: 1px dashed #fff;
-padding: 20px 0;
-}
-.tick_cont_news_three{
-    font-size: 18px;
-    line-height: 30px;
-    border-bottom: 1px dashed #fff;
-    padding: 20px 0;
-}
-.tick_cont_news_three ul li{
-   float: left;
-    line-height: 35px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-.tick_cont_news .tick_price{
-    font-size: 16px;
-}
-.tick_cont_news .tick_price span{
-    font-size: 24px;
-    color: #fc1330;
-    margin-left: 20px;
-}
-.tick_cont_news_four{
-    width: 350px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 20px;
-}
-/* ticket end */
-/*--//login--*/
-
-.login {
-    width: 100%;
-    height: 100%;
-}
-
-.login-left {
-
-    width: 40%;
-    height: 100%;
-    float: left;
-}
-
-.login-left .login-img {}
-
-.login-left .login-img img {
-    height: 660px;
-    width: 500px;
-    background: url('../image/login/leftimg.png') no-repeat center center;
-    background-size: 80% auto;
-}
-
-.login-right {
-    width: 60%;
-    float: left;
-
-    margin: 0 auto;
-}
-
-.header-left {
-   
-     background: url(../image/login/leftimg.png);
-    width: 40%;
-    float: left;
-     position: absolute;
-    background-color: #030303;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 22%;
-}
-
-
-.header-right {
-    width: 60%;
-    float: right;
-   
-   
-    height: 100%;
-}
-.pad-left-15 {
-    padding-left: 15%;
-
-
-    margin: 0 auto;
-}
-
-.login .language {
-    color: #333;
-    font-size: 16px;
-    float: right;
-    padding: 20px 40px 0 0;
-}
-
-.login .language img {
-    margin: 0 5px;
-}
-
-.form_header {
-    font-size: 40px;
-    color: #333;
-    font-weight: 500;
-    margin: 50px 0;
-}
-
-.log_switch {
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-
-.log_switch .account {
-    color: #12c2fe;
-}
-
-.log_switch .message {
-    color: #a5a5a5;
-}
-
-.login-form {
-    width: 320px;
-}
-
-.form_cont {}
-
-.form_cont input {
-    border-radius: 5px;
-    width: 320px;
-
-    border: 1px solid #a5a5a5;
-    padding: 10px 0px;
-
-    padding-left: 5px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
-    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
-}
-
-.form_cont input:focus {
-    border-color: #66afe9;
-    outline: 0;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
-}
-
-.mar-bot-22 {
-    margin-bottom: 22px;
-}
-
-.mar-bot-36 {
-    margin-bottom: 36px;
-}
-
-.login_msg {
-    font-size: 14px;
-    margin-bottom: 22px
-}
-
-.msg_right {
-    float: right;
-}
-
-#login {
-    width: 325px;
-    height: 43px;
-    line-height: 43px;
-    background: transparent url(../image/login/按钮1.png) no-repeat;
-    border: none;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    background-size: 100%;
-}
-
-#dynamic {
-    float: right;
-    width: 125px;
-    height: 43px;
-
-    background: transparent url(../image/login/按钮2.png) no-repeat;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 40px;
-    background-size: 100%;
-}
-
-.third_party a {
-    margin-left: 20px;
-}
-
-.copyRight {
-   
-       margin-left: 10px;
-    margin-top: 50px;
-    text-align: center;
-    position: absolute;
-    top: 90%;
-}
-
-.form_cont .dynamic_input {
-    width: 190px;
-    float: left;
-}
-
-@media screen and (min-width:1920px) {
-
-    .login-left .login-img img {
-        height: 960px;
-        width: 777px;
-    }
-}
-
-@media (max-width: 1025px) {
-    /* //<=991的设备 */
-    .login-left {
-        display: none
-    }
-    .login-right {
-        width: 100%;
-        margin: 0 auto;
-    }
-    .pad-left-15 {
-        padding: 10px;
-
-
-        margin: 0 auto;
-    }
-    .login-form {
-
-        margin: 0 auto;
-    }
-    .copyRight table {
-        margin: 0 auto;
-    }
-    @media (max-width: 991px) {
-        /* //<=991的设备 */
-        .login-left {
-            display: none
-        }
-        .login-right {
-            width: 100%;
-            margin: 0 auto;
-        }
-        .pad-left-15 {
-            padding: 10px;
-
-
-            margin: 0 auto;
-        }
-        .login-form {
-
-            margin: 0 auto;
-        }
-        .copyRight table {
-            margin: 0 auto;
-        }
-
-        @media (max-width: 767px) {
-            /* //<=768的设备 */
-            .game_banner{
-                display: none;
-            }
-            .tick_cont_news {
-    position: absolute;
-    top: 24%;
-    left: 7%;
-    color: #fff;
-    width: 350px;
-}
-            .header-left {
-                display: none
-            }
-            .header-right {
-    width: 100%;
-    
-    height: 100%;
-}
-            .login-right {
-                width: 100%;
-                margin: 0 auto;
-            }
-            .pad-left-15 {
-                padding: 10px;
-
-
-                margin: 0 auto;
-            }
-            .login-form {
-                width: 300px;
-                margin: 0 auto;
-            }
-            .form_cont input {
-
-                width: 290px;
-            }
-            #login {
-                width: 300px;
-            }
-            .form_cont .dynamic_input {
-                width: 170px;
-            }
-            .form_cont #myselect {
-                width: 300px;
-            }
-        }
-        /*--//login end--*/
+                    @charset "UTF-8";
+                    html,
+                    body {
+                        padding: 0;
+                        margin: 0;
+                        background: #fff;
+                        font-family: Microsoft Yahei;
+                    }
+
+                    @font-face {
+                        font-family: PingFangSC-Regular, sans-serif;
+                        font-family: Microsoft Yahei;
+                    }
+
+                    a:link,
+                    f a:hover {
+                        text-decoration: none;
+                        color: #333;
+                    }
+
+                    .clear {
+                        clear: both;
+                    }
+
+                    #sta_title {
+                        font-size: 42px;
+                        text-align: center;
+                        color: #333;
+                        margin-top: 100px;
+                    }
+
+                    .siteinfoLegal {
+                        padding: 0 30px;
+                    }
+
+                    .siteinfoLegal .sor_content li {
+                        font-size: 18px;
+                        color: #707070;
+                        line-height: 40px;
+                        /* margin-bottom: 100px; */
+                    }
+
+                    .siteinfoLegal .sor_content p {
+                        font-size: 18px;
+                        color: #707070;
+                        line-height: 40px;
+                        margin-bottom: 100px;
+                    }
+
+                    .siteinfoLegal .sor_content ul li {
+                        list-style: square;
+                        margin-left: 20px;
+                    }
+
+                    .about_work {
+                        background-image: url('../image/BG2.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
+
+                    .rec-img {
+                        position: relative;
+                        margin-right: 15px;
+                    }
+
+                    .three-img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+
+                    .recruit .rec_city {
+                        font-size: 16px;
+                        margin-top: 15px;
+                    }
+
+                    .recruit .rec_post {
+                        font-size: 20px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                    }
+
+                    .recruit .rec_work {
+                        margin-top: 20px;
+                    }
+
+                    .recruit .rec_work li {
+                        font-size: 18px;
+                        line-height: 35px;
+                    }
+
+                    .recruit .rec_more img {
+                        margin-top: 20px;
+                    }
+
+                    .marbot-80 {
+                        margin-bottom: 80px;
+                    }
+
+                    .sor_content p {
+                        font-size: 20px
+                    }
+
+                    body .siteinfoLegal .sor_content .text_blod {
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+
+                    .siteinfoLegal .sor_content {
+                        margin-bottom: 50px;
+                    }
+
+                    .siteinfoLegal .sor_content p {
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+
+                    .siteinfoLegal .sor_content .font-18 {
+                        font-size: 18px;
+                    }
+
+                    .cont_map {
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+
+                    @media(max-width:991px) {
+                        .cont_map img {
+                            width: 100%;
+                        }
+                    }
+                    /* game */
+
+                    .game_banner_one,
+                    .game_banner_two {
+                        position: relative;
+                    }
+
+                    .jw_logo {
+                        position: absolute;
+                        bottom: -26%;
+                        left: 39%;
+                        z-index: 1;
+                    }
+
+                    .game_name {
+                        position: absolute;
+                        top: 25%;
+                        left: 10%;
+                    }
+
+                    .game_name .game_name_cn {
+                        font-size: 64px;
+                        color: #fff;
+                        font-weight: 600;
+                    }
+
+                    .game_name .game_name_en {
+                        font-size: 20px;
+                        color: #fff;
+                        font-weight: 600;
+                        margin-bottom: 50px;
+                    }
+
+                    .game_details {
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                    }
+
+                    .game_details p {
+                        font-size: 16px;
+                        color: #FFF;
+                    }
+
+                    .game_details h2 {
+                        font-size: 40px;
+                        color: #FFbe02;
+                        text-align: left
+                    }
+
+                    .game_details ul li {
+                        font-size: 18px;
+                        color: #fff;
+                    }
+
+                    .game_video {
+                        position: absolute;
+                        top: 25%;
+                        right: 0%;
+                        z-index: 1
+                    }
+
+                    .WJXZ {
+                        padding: 8% 0;
+                    }
+
+                    .WJ_title {
+                        font-size: 24px;
+                        font-weight: 600;
+                        margin-bottom: 20px;
+                    }
+
+                    .WJXZ ol {
+                        line-height: 35px;
+                    }
+
+                    .WJXZ ol li {
+                        list-style: none;
+                        font-size: 18px;
+                    }
+                    /* game end */
+                    /* member */
+
+                    .member_cont {
+                        padding-top: 70px;
+                        background: #f6f6f6;
+                        width: 1200px;
+                        margin: 0 auto;
+                    }
+
+                    .personal_infor {
+                        height: 214px;
+                        border-bottom: 1px solid #333;
+                    }
+
+                    .top_msg {
+                        float: right;
+                        color: #787878;
+                        font-size: 12px;
+                        margin-right: 15px;
+                    }
+
+                    .float_left {
+                        float: left
+                    }
+
+                    .huizhang li {
+                        width: 100px;
+                        height: 100px;
+                        background: #333;
+                        margin-left: 100px;
+                        margin-top: 50px;
+                        float: left;
+                    }
+
+                    .member_cont_date {
+                        width: 1200px;
+                        height: 676px;
+                        background: #fff;
+                    }
+
+                    .member_list {
+                        background: #f6f6f6;
+                        width: 225px;
+                        float: left;
+                        height: 676px;
+                    }
+
+                    .member_list ul {
+                        margin-top: 30px;
+                    }
+
+                    .member_list ul li {
+                        font-size: 20px;
+                    }
+
+                    .member_list ul li {
+                        font-size: 20px;
+                        font-weight: normal;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+
+                    .selected,
+                    .member_list ul li:hover {
+                        background: url('../image/member/jdt.png');
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    .date_cont {
+                        background: #f6f6f6;
+                        width: 971px;
+                        float: right;
+                        height: 676px;
+                    }
+
+                    .order_top ul {
+                        background: #e2e2e2;
+                        font-size: 14px;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        width: 913px;
+                    }
+
+                    .order_top {
+                        width: 913px;
+                        height: 30px;
+                        background: #e2e2e2;
+                        font-size: 14px;
+                        line-height: 20px;
+                    }
+
+                    .order_top ul li {
+                        float: left;
+                    }
+
+                    .date_cont .order_del {
+                        float: right;
+                        margin-right: 26px;
+                    }
+
+                    .order_cont {
+                        padding-left: 47px;
+                        padding-top: 25px;
+                        height: 160px;
+                        background: #fff;
+                    }
+
+                    .order_cont li {
+                        float: left;
+                    }
+
+                    .order_list {
+                        width: 913px;
+                        margin: 0 auto;
+                        margin-bottom: 25px;
+                    }
+
+                    .order_img img {
+                        box-shadow: 3px 3px 8px #7d7b7b;
+                    }
+
+                    .order_date {
+                        margin-left: 25px;
+                        line-height: 25px;
+                    }
+
+                    .order_name {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin-bottom: 5px;
+                    }
+
+                    .order_city {
+                        font-size: 13px;
+                        font-weight: 600;
+                    }
+
+                    .order_time,
+                    .order_number {
+                        font-size: 13px;
+                        color: #fc1330;
+                    }
+
+                    .order_time span {
+                        margin-left: 5px;
+                    }
+
+                    .order_price,
+                    .order_state,
+                    .order_view {
+                        margin-left: 130px;
+                        margin-top: 40px;
+                        font-size: 14px;
+                    }
+
+                    .order_price {
+                        font-weight: 600;
+                    }
+
+                    .order_state {
+                        color: #fc1330;
+                    }
+                    /* member end */
+                    /* OrderDate */
+
+                    .order_date_top {
+                        background: #fffdec;
+                        height: 33px;
+                        line-height: 33px;
+                    }
+
+                    .order_date_top li {
+                        float: left;
+                        font-size: 16px;
+                        font-weight: 600;
+                    }
+
+                    .order_date_top li span {
+                        color: #149500;
+                    }
+
+                    .order_date_info {
+                        margin-left: 47px;
+                    }
+
+                    .order_date_info li {
+                        font-size: 13px;
+                        line-height: 25px;
+                    }
+
+                    .order_date_info .order_date_info_name {
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding: 15px 0;
+                    }
+
+                    .order_table {
+                        margin-top: 20px;
+                        width: 913px;
+                        text-align: center;
+                    }
+
+                    .order_table thead {
+                        color: #929292;
+                        background: #e2e2e2;
+                        height: 33px;
+                        line-height: 33px;
+                        margin: 0 auto;
+                        font-size: 13px;
+                    }
+
+                    .order_table tbody {
+                        background: #fff;
+                        line-height: 35px;
+                        font-size: 14px;
+                    }
+
+                    .order_table tbody tr {
+                        height: 90px;
+                    }
+
+                    .order_table tbody tr td {
+                        border-right: 1px solid #e8e6e6;
+                    }
+
+                    .order_table tbody tr h3 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #19bcf5;
+                    }
+
+                    .order_table tbody tr p {
+                        font-size: 13px;
+                    }
+
+                    .order_table tbody tr span {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #d0021b;
+                    }
+                    /* OrderDate end */
+                    /* member_infor */
+
+                    .member_infor_cont {
+                        padding: 35px 47px;
+                        width: 913px;
+                    }
+
+                    .member_infor_cont li {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 20px 0;
+                    }
+
+                    .member_infor_cont li a {
+                        font-size: 16px;
+                        color: #333;
+                    }
+
+                    .member_infor_cont span {
+                        border-bottom: 1px dashed #b5b3b3;
+                    }
+
+                    .member_infor_cont input {
+                        border: 0;
+                        border-bottom: 1px dashed #b5b3b3;
+                        background: #f6f6f6;
+                        width: 680px;
+                    }
+
+                    .parit,
+                    .input-group,
+                    .part_setting {
+                        float: left;
+                    }
+
+                    .input-group {
+                        width: 682px;
+                        border: 0;
+                        background: #f6f6f6;
+                    }
+
+                    .member_infor_cont img {
+                        margin-right: 30px;
+                    }
+                    /* member_infor end */
+
+                    .Password_Setting {
+                        font-size: 20px;
+                        font-weight: 600;
+                        margin: 57px 0;
+                    }
+
+                    .Password_Setting_cont {
+                        font-size: 16px;
+                        font-weight: 600;
+                        width: 420px;
+                    }
+
+                    .Password_Setting_cont td {
+                        text-align: right;
+                    }
+
+                    .mar-16 {
+                        margin: 16px 0;
+                    }
+
+                    .setting_ok {
+                        background: url('../image/member/baocun.png') no-repeat;
+                        line-height: 44px;
+                        padding: 9px 34px;
+                        color: #fff;
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-left: 100px;
+                    }
+
+                    .setting_ok:hover {
+                        color: #fff;
+                    }
+                    /* ticket */
+
+                    .ticket_name_logo {
+                        font-size: 14px;
+                        color: #fff
+                    }
+
+                    .ticket_name_dian {
+                        font-size: 24px;
+                        font-weight: 600;
+                        color: #fff;
+                        margin: 30px 0;
+                    }
+
+                    .ticket_name_city {
+                        font-size: 13px;
+                        color: #fff;
+                        width: 192px;
+                    }
+
+                    .ticket_game_img li {
+                        float: left;
+                        color: #fff;
+                        margin: 0 15px;
+                    }
+
+                    .ticket_game_img {
+                        position: absolute;
+                        top: 10%;
+                        left: 10%;
+                    }
+
+                    .ticket_game_txt {
+                        text-align: left;
+                    }
+
+                    .ticket_game_image {
+                        text-align: center;
+                    }
+
+                    .ticket_game_img li p {
+                        font-size: 16px;
+                        margin: 15px 0;
+                    }
+
+                    .ticket_game_select {
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+
+                    .game_banner .mar_top_50 {
+                        margin-top: 50px;
+                    }
+
+                    .bor_bot_tick {
+                        border-bottom: 1px solid #2c4c6b;
+                    }
+
+                    .super_pass {
+                        position: absolute;
+                        top: 60%;
+                        left: 10%;
+                        color: #fff;
+                        width: 60%;
+                    }
+
+                    .tick_details_post {
+                        position: absolute;
+                        top: 78%;
+                        left: 10%;
+                    }
+
+                    .super_pass h3 {
+                        font-size: 36px;
+                        font-weight: 600;
+                    }
+
+                    .super_pass p {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 15px 0;
+                    }
+
+                    .tick_details li {
+                        float: left;
+                    }
+
+                    .tick_cont {
+                        margin-top: 50px;
+                    }
+
+                    .tick_cont_right {}
+
+                    .tick_cont_left ul li {
+                        margin-top: 50px;
+                    }
+
+                    .tick_cont_left ul li a {
+                        border: 1px solid #12c2fa;
+                        padding: 9px 15px;
+                        border-radius: 8px;
+                        margin: 0 20px
+                    }
+
+                    .tick_cont_left ul li p {
+                        float: left;
+                        margin-bottom: 40px
+                    }
+
+                    .tick_cont_BG {
+                        position: relative;
+                    }
+
+                    .tick_cont_news {
+                        position: absolute;
+                        top: 4%;
+                        left: 7%;
+                        color: #fff;
+                        width: 350px;
+                    }
+
+                    .tick_cont_news_one img {
+                        box-shadow: 4px 4px 8px #333;
+                        margin-right: 10px
+                    }
+
+                    .tick_cont_news_one li {
+                        float: left;
+                        margin-left: 10px;
+                        line-height: 20px;
+                    }
+
+                    .tick_cont_news_one li h3 {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+
+                    .tick_cont_news_one li h5 {
+                        font-size: 14px;
+                        font-weight: 600;
+                        margin-top: 10px;
+                        margin-bottom: 25px;
+                    }
+
+                    .tick_cont_news_one li p {
+                        font-size: 13px;
+                        font-weight: 600;
+                        color: #e5e2e2;
+                    }
+
+                    .tick_cont_news_two {
+                        font-size: 13px;
+                        color: #e5e2e2;
+                        line-height: 30px;
+                        border-bottom: 1px dashed #fff;
+                        padding: 20px 0;
+                    }
+
+                    .tick_cont_news_three {
+                        font-size: 18px;
+                        line-height: 30px;
+                        border-bottom: 1px dashed #fff;
+                        padding: 20px 0;
+                    }
+
+                    .tick_cont_news_three ul li {
+                        float: left;
+                        line-height: 35px;
+                        margin-top: 30px;
+                        margin-bottom: 50px;
+                    }
+
+                    .tick_cont_news .tick_price {
+                        font-size: 16px;
+                    }
+
+                    .tick_cont_news .tick_price span {
+                        font-size: 24px;
+                        color: #fc1330;
+                        margin-left: 20px;
+                    }
+
+                    .tick_cont_news_four {
+                        width: 350px;
+                        margin: 0 auto;
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+                    /* ticket end */
+                    /*--//login--*/
+
+                    .login {
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .login-left {
+                        width: 40%;
+                        height: 100%;
+                        float: left;
+                    }
+
+                    .login-left .login-img {}
+
+                    .login-left .login-img img {
+                        height: 660px;
+                        width: 500px;
+                        background: url('../image/login/leftimg.png') no-repeat center center;
+                        background-size: 80% auto;
+                    }
+
+                    .login-right {
+                        width: 60%;
+                        float: left;
+                        margin: 0 auto;
+                    }
+
+                    .header-left {
+                        background: url(../image/login/leftimg.png);
+                        width: 40%;
+                        float: left;
+                        position: absolute;
+                        background-color: #030303;
+                        height: 100%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: 22%;
+                    }
+
+                    .header-right {
+                        width: 60%;
+                        float: right;
+
+                        height: 100%;
+                    }
+
+                    .pad-left-15 {
+                        padding-left: 15%;
+
+                        margin: 0 auto;
+                    }
+
+                    .login .language {
+                        color: #333;
+                        font-size: 16px;
+                        float: right;
+                        padding: 20px 40px 0 0;
+                    }
+
+                    .login .language img {
+                        margin: 0 5px;
+                    }
+
+                    .form_header {
+                        font-size: 40px;
+                        color: #333;
+                        font-weight: 500;
+                        margin: 50px 0;
+                    }
+
+                    .log_switch {
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-bottom: 50px;
+                    }
+
+                    .log_switch .account {
+                        color: #12c2fe;
+                    }
+
+                    .log_switch .message {
+                        color: #a5a5a5;
+                    }
+
+                    .login-form {
+                        width: 320px;
+                    }
+
+                    .form_cont {}
+
+                    .form_cont input {
+                        border-radius: 5px;
+                        width: 320px;
+                        border: 1px solid #a5a5a5;
+                        padding: 10px 0px;
+                        padding-left: 5px;
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+                        -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+                        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+                        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+                    }
+
+                    .form_cont input:focus {
+                        border-color: #66afe9;
+                        outline: 0;
+                        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+                        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+                    }
+
+                    .mar-bot-22 {
+                        margin-bottom: 22px;
+                    }
+
+                    .mar-bot-36 {
+                        margin-bottom: 36px;
+                    }
+
+                    .login_msg {
+                        font-size: 14px;
+                        margin-bottom: 22px
+                    }
+
+                    .msg_right {
+                        float: right;
+                    }
+
+                    #login {
+                        width: 325px;
+                        height: 43px;
+                        line-height: 43px;
+                        background: transparent url(../image/login/按钮1.png) no-repeat;
+                        border: none;
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: 400;
+                        margin-bottom: 40px;
+                        background-size: 100%;
+                    }
+
+                    #dynamic {
+                        float: right;
+                        width: 125px;
+                        height: 43px;
+                        background: transparent url(../image/login/按钮2.png) no-repeat;
+                        border: none;
+                        color: #fff;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 40px;
+                        background-size: 100%;
+                    }
+
+                    .third_party a {
+                        margin-left: 20px;
+                    }
+
+                    .copyRight {
+                        margin-left: 10px;
+                        margin-top: 50px;
+                        text-align: center;
+                        position: absolute;
+                        top: 90%;
+                    }
+
+                    .form_cont .dynamic_input {
+                        width: 190px;
+                        float: left;
+                    }
+
+                    @media screen and (min-width:1920px) {
+                        .login-left .login-img img {
+                            height: 960px;
+                            width: 777px;
+                        }
+                    }
+
+                    @media (max-width: 1025px) {
+                        /* //<=991的设备 */
+                        .login-left {
+                            display: none
+                        }
+                        .login-right {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                        .pad-left-15 {
+                            padding: 10px;
+
+                            margin: 0 auto;
+                        }
+                        .login-form {
+                            margin: 0 auto;
+                        }
+                        .copyRight table {
+                            margin: 0 auto;
+                        }
+                        .mob_hide_1024 {
+                            display: none;
+                        }
+                        .tick_banner_one {
+                            background-image: url('../image/ticket/BG.png');
+                            background-size: cover;
+                            width: 100%;
+                            height: 720px;
+                        }
+                        .tick_cont_BG {
+                            position: relative;
+                            width: 330px;
+                            height: 719px;
+                        }
+                        .tick_cont_news {
+
+                            width: 300px;
+                        }
+                        .tick_cont_news_four {
+                            width: 300px;
+                        }
+                        .login-btn {
+                            margin-left: 15%;
+                        }
+                    }
+
+                    @media (min-width:992px) and (max-width: 1024px) {
+                        .navbar-nav .login-btn {
+                            margin-left: 17%;
+                        }
+                        .game_banner_two_img {
+                            height: 450px;
+                        }
+                        .game_video {
+                            position: absolute;
+                            top: 25%;
+                            right: -10%;
+                            z-index: 1;
+                        }
+                    }
+
+                    @media (max-width: 991px) {
+                        /* //<=991的设备 */
+                        .login-left {
+                            display: none
+                        }
+                        .login-right {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                        .pad-left-15 {
+                            padding: 10px;
+
+                            margin: 0 auto;
+                        }
+                        .login-form {
+                            margin: 0 auto;
+                        }
+                        .copyRight table {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    @media (min-width:768px) and (max-width: 990px) {
+                        .mob_hide_768 {
+                            display: none;
+                        }
+                        .login-btn {
+                            margin-left: 0%;
+                        }
+                        .super_pass {
+                            position: absolute;
+                            top: 57%;
+                            left: 10%;
+                            width: 84%;
+                        }
+                        .tick_details_post {
+                            position: absolute;
+                            top: 74%;
+                            left: 10%;
+                        }
+                        .tick_cont_news {
+                            position: absolute;
+                            top: 5%;
+                            left: 10%;
+                            color: #fff;
+                            width: 300px;
+                        }
+                        .game_banner_two_img {
+                            height: 430px;
+                        }
+                        .game_video {
+                            position: absolute;
+                            top: 29%;
+                            left: 44%;
+                            z-index: 1;
+                        }
+                    }
+
+                    @media (max-width: 767px) {
+                        /* //<=768的设备 */
+                        .tick_cont_news {
+                            position: absolute;
+                            top: 24%;
+                            left: 7%;
+                            color: #fff;
+                            width: 300px;
+                        }
+                        .mob_hide {
+                            display: none;
+                        }
+
+                        .mar-top-40 {
+                            margin-top: 40px
+                        }
+                        .tick_banner_one {
+                            background-image: url('../image/ticket/BG.png');
+                            background-size: cover;
+                            width: 100%;
+                            height: 1000px;
+                        }
+                        .bor_bot_tick {
+                            width: 80%;
+                        }
+                        .ticket_game_img {
+                            position: absolute;
+                            left: 5%;
+                            top: 2%;
+                        }
+                        .tick_details_post {
+                            position: absolute;
+                            top: 72%;
+                            left: 1%;
+                        }
+                        .tick_cont_right {
+                            padding-left: 0;
+                        }
+                        .header-left {
+                            display: none
+                        }
+                        .header-right {
+                            width: 100%;
+                            height: 100%;
+                        }
+                        .login-right {
+                            width: 100%;
+                            margin: 0 auto;
+                        }
+                        .pad-left-15 {
+                            padding: 10px;
+
+                            margin: 0 auto;
+                        }
+                        .login-form {
+                            width: 300px;
+                            margin: 0 auto;
+                        }
+                        .form_cont input {
+                            width: 290px;
+                        }
+                        #login {
+                            width: 300px;
+                        }
+                        .form_cont .dynamic_input {
+                            width: 170px;
+                        }
+                        .form_cont #myselect {
+                            width: 300px;
+                        }
+                        .game_banner_one_BG {
+                            background: url(../image/game/BG1.png) no-repeat;
+                            width: 100%;
+                            height: 333px;
+                        }
+                        .game_banner_one_BG1 {
+                            display: none;
+                        }
+                        .game_banner_two_img {
+                            display: none;
+                        }
+                        .game_banner_two_BG {
+                            background: url(../image/game/BG2.png) no-repeat;
+                            width: 100%;
+                            height: 550px;
+                        }
+                        .game_details {
+                            position: absolute;
+                            top: 3%;
+                            left: 10%;
+                        }
+                        .game_video {
+                            position: absolute;
+                            top: 72%;
+                            left: 14%;
+                            z-index: 1;
+                        }
+                    }
+
+                    @media (max-width: 380px) {
+                        /* //<=768的设备 */
+                        .super_pass {
+                            position: absolute;
+                            top: 50%;
+                            left: 10%;
+                            color: #fff;
+                            width: 60%;
+                        }
+                        .tick_banner_one {
+
+
+                            height: 1150px;
+                        }
+                        .tick_details_post {
+                            position: absolute;
+                            top: 62%;
+                            left: 6%;
+                        }
+                        .tick_cont_left ul li a {
+
+                            margin: 0 14px;
+                        }
+                        .tick_cont .container {
+                            padding-left: 0
+                        }
+                    }
+
+                    @media (max-width: 320px) {
+                        .tick_cont_left ul li a {
+                            margin: 0px 6px;
+                        }
+                        .tick_cont {
+                            margin-top: 0px;
+                        }
+                        .tick_cont_BG {
+                            width: 316px;
+                        }
+                        .tick_cont_news_two {
+
+                            width: 280px;
+                            padding: 9px 0;
+                        }
+                        .tick_cont_news_three {
+                            padding: 9px 0;
+                            width: 280px;
+                        }
+                        .tick_cont_news_four {
+                            width: 150px;
+                        }
+                        .tick_details_post {
+                            position: absolute;
+                            top: 62%;
+                            left: 0%;
+                        }
+                        .tick_cont_news {
+
+                            position: absolute;
+                            top: 28%;
+                            left: 7%;
+
+                            width: 276px;
+                        }
+                        .tick_cont_news_three ul li {
+                            float: left;
+                            line-height: 35px;
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+                    }
