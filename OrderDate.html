@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <link rel='stylesheet' type='text/css' href='css/jquery.easy-gallery.css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <link rel="stylesheet" href="css/jquery-labelauty.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/lby-main.css" type="text/css" media="screen" charset="utf-8" />
     <!--//style sheet end here-->
 </head>
 
-<body id="game">
+<body>
     <div class="header-w3layouts">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -61,39 +63,44 @@
     </div>
     <div class="member_cont">
         <div class="personal_infor">
-            <p class="top_msg">更多精彩徽章请在APP中查看</p>
-            <div class="member_infor">
-                <div class="float_left" style="margin-left: 60px;margin-top: 50px">
-                    <img src="image/member/tx.png">
+            <div class="container">
+                <p class="top_msg">更多精彩徽章请在APP中查看</p>
+                <div class="member_infor">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="float_left member_infor_tx">
+                            <img src="image/member/tx.png">
+                        </div>
+                        <ol class=" float_left">
+                            <li style="font-size: 18px;font-weight: 600;">SOREAL01010</li>
+                            <li style="font-size: 18px;font-weight: 600; color: #12c2fe">积分 500</li>
+                            <li style="font-size: 14px;">v12 <span></span></li>
+                        </ol>
+                    </div>
+                    <ul class="huizhang col-md-7 col-sm-7 col-xs-12">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-                <ul class=" float_left" style="margin-left: 40px;margin-top: 68px">
-                    <li style="font-size: 18px;font-weight: 600;">SOREAL01010</li>
-                    <li style="font-size: 18px;font-weight: 600; color: #12c2fe">积分 500</li>
-                    <li style="font-size: 14px;">v12 <span></span></li>
-                </ul>
-                <ul class="huizhang">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </div>
         <div class="clear"></div>
-        <div class="member_cont_date">
-            <div class="member_list">
-                <ul>
-                    <li class="selected">订单信息</li>
-                    <li>我的优惠券</li>
-                    <li>会员信息</li>
-                    <li>账号设置</li>
-                </ul>
-            </div>
-            <div class="date_cont">
-                <div class="order_list clear">
+        <div class="member_cont_date row">
+            <div class="container">
+                <div class="member_list col-md-3 col-sm-3 col-xs-12">
+                    <ul>
+                        <li class="selected">订单信息</li>
+                        <li>我的优惠券</li>
+                        <li>会员信息</li>
+                        <li >账号设置</li>
+                    </ul>
+                </div>
+                <div class="date_cont col-md-9 col-sm-9 col-xs-12">
+                     <div class="order_list clear">
                     <div class="order_date_top">
                         <ul>
                             <li style="margin-left: 47px;">订单编号：28287381278</li>
-                            <li style="margin-left: 25px;">状态：<span>已完成</span></li>
+                            <li class="order_date_top_zt" >状态：<span>已完成</span></li>
                         </ul>
                     </div>
                     <div class="clear"></div>
@@ -128,125 +135,130 @@
                         </tbody>
                     </table>
                 </div>
+                </div>
             </div>
-        </div>
-    </div>
-    </div>
-    <footer>
-        <div class="footerct">
-            <div class="container">
-                <div class="logo"><img src="image/logo.png"></div>
-                <ul>
-                    <li>
-                        <div class="leititle">导航</div>
-                        <div class="listdh">
-                            <span><a href="#">游戏</a></span>
-                            <span><a href="#">门店</a></span>
-                            <span><a href="#">票务</a></span>
-                            <span><a href="#">新闻</a></span>
-                            <span><a href="#">招贤纳士</a></span>
-                            <span><a href="#">关于我们</a></span>
-                            <span><a href="#">联系我们</a></span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="leititle" style="color: #e5e2e2;">游戏</div>
-                        <div class="listdh">
-                            <span><a href="#">星际方舟</a></span>
-                            <span><a href="#">使命行动</a></span>
-                            <span><a href="#">天空传奇</a></span>
-                            <span><a href="#">科学探秘</a></span>
-                            <span><a href="#">末班地铁</a></span>
-                            <span><a href="#">极速特攻</a></span>
-                            <span><a href="#">超时空探秘</a></span>
-                            <span><a href="#">生命奇幻之旅</a></span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="leititle" style="color: #e5e2e2;">服务条款</div>
-                        <div class="listdh">
-                            <span><a href="#">用户协议</a></span>
-                            <span><a href="#">玩家须知</a></span>
-                            <span><a href="#">隐私条款</a></span>
-                            <span><a href="#">法律声明</a></span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="erweict">
-                            <div class="erwei"><img src="image/erwei1.png"></div>
-                            <span>下载手机APP</span>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="erweict">
-                            <div class="erwei"><img src="image/erwei2.png"></div>
-                            <span>关注微信公众号</span>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
-    <!-- //js -->
-    <!--menu script-->
-    <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--FlexSlider-->
-    <!--End-slider-script-->
-    <!-- start-smoth-scrolling -->
-    <script type="text/javascript" src="js/move-top.js"></script>
-    <script type="text/javascript" src="js/easing.js"></script>
-    <script type="text/javascript">
-    jQuery(document).ready(function($) {
-        $(".scroll").click(function(event) {
-            event.preventDefault();
-            $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
-        });
-    });
-    </script>
-    <!-- start-smoth-scrolling -->
-    <!-- for-bottom-to-top smooth scrolling -->
-    <script type="text/javascript">
-    $(document).ready(function() {
-        // var clientWidth=document.documentElement.clientWidth;
+            <footer>
+                <div class="footerct">
+                    <div class="container">
+                        <div class="logo"><img src="image/logo.png"></div>
+                        <ul>
+                            <li>
+                                <div class="leititle">导航</div>
+                                <div class="listdh">
+                                    <span><a href="#">游戏</a></span>
+                                    <span><a href="#">门店</a></span>
+                                    <span><a href="#">票务</a></span>
+                                    <span><a href="#">新闻</a></span>
+                                    <span><a href="#">招贤纳士</a></span>
+                                    <span><a href="#">关于我们</a></span>
+                                    <span><a href="#">联系我们</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="leititle" style="color: #e5e2e2;">游戏</div>
+                                <div class="listdh">
+                                    <span><a href="#">星际方舟</a></span>
+                                    <span><a href="#">使命行动</a></span>
+                                    <span><a href="#">天空传奇</a></span>
+                                    <span><a href="#">科学探秘</a></span>
+                                    <span><a href="#">末班地铁</a></span>
+                                    <span><a href="#">极速特攻</a></span>
+                                    <span><a href="#">超时空探秘</a></span>
+                                    <span><a href="#">生命奇幻之旅</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="leititle" style="color: #e5e2e2;">服务条款</div>
+                                <div class="listdh">
+                                    <span><a href="#">用户协议</a></span>
+                                    <span><a href="#">玩家须知</a></span>
+                                    <span><a href="#">隐私条款</a></span>
+                                    <span><a href="#">法律声明</a></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="erweict">
+                                    <div class="erwei"><img src="image/erwei1.png"></div>
+                                    <span>下载手机APP</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="erweict">
+                                    <div class="erwei"><img src="image/erwei2.png"></div>
+                                    <span>关注微信公众号</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+            <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+            <!-- //js -->
+            <!--menu script-->
+            <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <!--FlexSlider-->
+            <!--End-slider-script-->
+            <!-- start-smoth-scrolling -->
+            <script type="text/javascript" src="js/move-top.js"></script>
+            <script type="text/javascript" src="js/easing.js"></script>
+            <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+                });
+            });
+            </script>
+            <!-- start-smoth-scrolling -->
+            <!-- for-bottom-to-top smooth scrolling -->
+            <script type="text/javascript">
+            $(document).ready(function() {
+                // var clientWidth=document.documentElement.clientWidth;
 
-        $(window).resize(function() {
-            var clientWidth = $(window).width();
-            if (clientWidth > 800) {
-                $('.product_list .product').each(function(index, element) {
-                    if ((index + 1) % 4 == 0) {
-                        if (index > 4) {
-                            $(this).addClass('no-border-b');
-                        }
-                        $(this).addClass('no-border-r');
-                    } else if (index >= 4) {
-                        $(this).addClass('no-border-b');
+                $(window).resize(function() {
+                    var clientWidth = $(window).width();
+                    if (clientWidth > 800) {
+                        $('.product_list .product').each(function(index, element) {
+                            if ((index + 1) % 4 == 0) {
+                                if (index > 4) {
+                                    $(this).addClass('no-border-b');
+                                }
+                                $(this).addClass('no-border-r');
+                            } else if (index >= 4) {
+                                $(this).addClass('no-border-b');
+                            }
+                        });
+                    } else {
+                        $('.product_list .product').each(function(index, element) {
+                            if ((index + 1) % 2 == 0) {
+                                if (index > 6) {
+                                    $(this).addClass('no-border-b');
+                                }
+                                $(this).addClass('no-border-r');
+                            } else if (index >= 6) {
+                                $(this).addClass('no-border-b');
+                            }
+                        });
                     }
                 });
-            } else {
-                $('.product_list .product').each(function(index, element) {
-                    if ((index + 1) % 2 == 0) {
-                        if (index > 6) {
-                            $(this).addClass('no-border-b');
-                        }
-                        $(this).addClass('no-border-r');
-                    } else if (index >= 6) {
-                        $(this).addClass('no-border-b');
-                    }
-                });
-            }
-        });
-        $('.product').mouseover(function() {
-            $(this).find('div').css('color', '#e5e2e2');
-        }).mouseleave(function() {
-            $(this).find('div').css('color', '#787878');
-        })
-        $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-    </script>
-    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-    <!-- //for-bottom-to-top smooth scrolling -->
+                $('.product').mouseover(function() {
+                    $(this).find('div').css('color', '#e5e2e2');
+                }).mouseleave(function() {
+                    $(this).find('div').css('color', '#787878');
+                })
+                $().UItoTop({ easingType: 'easeOutQuart' });
+            });
+            </script>
+            <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+            <script type="text/javascript" src="js/jquery-labelauty.js"></script>
+            <script>
+            $(document).ready(function() {
+                $(".to-labelauty").labelauty({ minimum_width: "155px" });
+                $(".to-labelauty-icon").labelauty({ label: false });
+            });
+            </script>
+            <!-- //for-bottom-to-top smooth scrolling -->
 </body>
 
 </html>

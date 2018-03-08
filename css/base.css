@@ -18,6 +18,7 @@
                         color: #333;
                     }
 
+
                     .clear {
                         clear: both;
                     }
@@ -152,13 +153,13 @@
                     .game_name .game_name_cn {
                         font-size: 64px;
                         color: #fff;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .game_name .game_name_en {
                         font-size: 20px;
                         color: #fff;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin-bottom: 50px;
                     }
 
@@ -197,7 +198,7 @@
 
                     .WJ_title {
                         font-size: 24px;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin-bottom: 20px;
                     }
 
@@ -215,13 +216,14 @@
                     .member_cont {
                         padding-top: 70px;
                         background: #f6f6f6;
-                        width: 1200px;
+                        width: 100%;
                         margin: 0 auto;
                     }
 
                     .personal_infor {
-                        height: 214px;
+                        height: 100%;
                         border-bottom: 1px solid #333;
+                        padding-bottom: 30px;
                     }
 
                     .top_msg {
@@ -236,25 +238,25 @@
                     }
 
                     .huizhang li {
-                        width: 100px;
-                        height: 100px;
+                        width: 80px;
+                        height: 80px;
                         background: #333;
-                        margin-left: 100px;
+                        margin-left: 5%;
                         margin-top: 50px;
                         float: left;
                     }
 
                     .member_cont_date {
-                        width: 1200px;
-                        height: 676px;
-                        background: #fff;
+
+                        margin: 0;
+                        background: #f6f6f6;
                     }
 
                     .member_list {
                         background: #f6f6f6;
-                        width: 225px;
+
                         float: left;
-                        height: 676px;
+                        height: 100%;
                     }
 
                     .member_list ul {
@@ -277,14 +279,29 @@
                         background: url('../image/member/jdt.png');
                         color: #fff;
                         font-size: 20px;
-                        font-weight: 600;
+                        font-weight: 500;
+                    }
+
+                    .member_infor ol,
+                    .member_infor ul {
+                        list-style: none;
+                    }
+
+                    .member_infor_tx {
+                        margin-left: 60px;
+                        margin-top: 50px
+                    }
+
+                    .member_infor ol {
+                        margin-left: 40px;
+                        margin-top: 68px;
                     }
 
                     .date_cont {
                         background: #f6f6f6;
-                        width: 971px;
+
                         float: right;
-                        height: 676px;
+                        height: 100%;
                     }
 
                     .order_top ul {
@@ -324,7 +341,7 @@
                     }
 
                     .order_list {
-                        width: 913px;
+
                         margin: 0 auto;
                         margin-bottom: 25px;
                     }
@@ -340,13 +357,13 @@
 
                     .order_name {
                         font-size: 20px;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin-bottom: 5px;
                     }
 
                     .order_city {
                         font-size: 13px;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .order_time,
@@ -359,6 +376,10 @@
                         margin-left: 5px;
                     }
 
+                    .order_date_top_zt {
+                        margin-left: 25px
+                    }
+
                     .order_price,
                     .order_state,
                     .order_view {
@@ -368,7 +389,7 @@
                     }
 
                     .order_price {
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .order_state {
@@ -386,7 +407,7 @@
                     .order_date_top li {
                         float: left;
                         font-size: 16px;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .order_date_top li span {
@@ -403,7 +424,7 @@
                     }
 
                     .order_date_info .order_date_info_name {
-                        font-weight: 600;
+                        font-weight: 500;
                         font-size: 16px;
                         padding: 15px 0;
                     }
@@ -439,7 +460,7 @@
 
                     .order_table tbody tr h3 {
                         font-size: 14px;
-                        font-weight: 600;
+                        font-weight: 500;
                         color: #19bcf5;
                     }
 
@@ -449,8 +470,16 @@
 
                     .order_table tbody tr span {
                         font-size: 16px;
-                        font-weight: 600;
+                        font-weight: 500;
                         color: #d0021b;
+                    }
+
+                    .order_top_date {
+                        margin-left: 47px;
+                    }
+
+                    .order_top_bh {
+                        margin-left: 25px;
                     }
                     /* OrderDate end */
                     /* member_infor */
@@ -462,8 +491,8 @@
 
                     .member_infor_cont li {
                         font-size: 18px;
-                        font-weight: 600;
-                        margin: 20px 0;
+                        font-weight: 500;
+                        margin: 60px 0;
                     }
 
                     .member_infor_cont li a {
@@ -479,7 +508,8 @@
                         border: 0;
                         border-bottom: 1px dashed #b5b3b3;
                         background: #f6f6f6;
-                        width: 680px;
+                        width: 660px;
+                        outline: none;
                     }
 
                     .parit,
@@ -501,18 +531,18 @@
 
                     .Password_Setting {
                         font-size: 20px;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin: 57px 0;
                     }
 
                     .Password_Setting_cont {
                         font-size: 16px;
-                        font-weight: 600;
+                        font-weight: 500;
                         width: 420px;
                     }
 
                     .Password_Setting_cont td {
-                        text-align: right;
+                        text-align: center;
                     }
 
                     .mar-16 {
@@ -525,7 +555,7 @@
                         padding: 9px 34px;
                         color: #fff;
                         font-size: 18px;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin-left: 100px;
                     }
 
@@ -541,7 +571,7 @@
 
                     .ticket_name_dian {
                         font-size: 24px;
-                        font-weight: 600;
+                        font-weight: 500;
                         color: #fff;
                         margin: 30px 0;
                     }
@@ -579,7 +609,7 @@
 
                     .ticket_game_select {
                         font-size: 18px;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .game_banner .mar_top_50 {
@@ -606,12 +636,12 @@
 
                     .super_pass h3 {
                         font-size: 36px;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .super_pass p {
                         font-size: 18px;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin: 15px 0;
                     }
 
@@ -666,19 +696,19 @@
 
                     .tick_cont_news_one li h3 {
                         font-size: 24px;
-                        font-weight: 600;
+                        font-weight: 500;
                     }
 
                     .tick_cont_news_one li h5 {
                         font-size: 14px;
-                        font-weight: 600;
+                        font-weight: 500;
                         margin-top: 10px;
                         margin-bottom: 25px;
                     }
 
                     .tick_cont_news_one li p {
                         font-size: 13px;
-                        font-weight: 600;
+                        font-weight: 500;
                         color: #e5e2e2;
                     }
 
@@ -899,8 +929,78 @@
                         }
                     }
 
+                    @media (min-width: 1200px) {
+                        .personal_infor {
+                            width: 1200px;
+                            margin: 0 auto;
+                            background: #f6f6f6;
+                            border-bottom: 1px solid #333;
+                            padding-bottom: 30px;
+                        }
+                        .container {
+                            width: 1200px;
+                            padding: 0;
+                            margin: 0 auto;
+                        }
+                        .member_cont {
+                            background: #fff;
+                        }
+                        .member_cont_date {
+                            margin: 0;
+                            background: #fff;
+                        }
+                        .member_list {
+                            width: 225px;
+                            height: 676px;
+                        }
+                        .date_cont {
+                            height: 676px;
+                            width: 971px;
+                        }
+                        .order_cont {
+
+                            width: 913px;
+                        }
+                    }
+
+                    @media (max-width: 1199px) {
+                        .order_top ul {
+
+                            width: 100%;
+                        }
+
+                        .order_top {
+                            width: 100%;
+                        }
+                        .order_price,
+                        .order_state,
+                        .order_view {
+                            margin-left: 5%;
+                        }
+                        .member_infor_cont input {
+
+                            width: 500px;
+                        }
+                        .member_infor_cont {
+                            padding: 0;
+                            width: 100%;
+                        }
+                    }
+
                     @media (max-width: 1025px) {
-                        /* //<=991的设备 */
+                        /* //<=1025的设备 */
+                        .order_top ul {
+
+                            width: 100%;
+                        }
+                        .member_infor_cont input {
+
+                            width: 500px;
+                        }
+
+                        .order_top {
+                            width: 100%;
+                        }
                         .login-left {
                             display: none
                         }
@@ -942,6 +1042,10 @@
                         }
                         .login-btn {
                             margin-left: 15%;
+                        }
+                        .order_table {
+
+                            width: 700px;
                         }
                     }
 
@@ -1016,6 +1120,17 @@
                             left: 44%;
                             z-index: 1;
                         }
+                        .order_table {
+                            width: 530px;
+                        }
+                        .member_infor_cont input {
+
+                            width: 350px;
+                        }
+                        .member_infor ol {
+                            margin-left: 40px;
+                            margin-top: 30px;
+                        }
                     }
 
                     @media (max-width: 767px) {
@@ -1027,6 +1142,7 @@
                             color: #fff;
                             width: 300px;
                         }
+
                         .mob_hide {
                             display: none;
                         }
@@ -1077,7 +1193,7 @@
                             margin: 0 auto;
                         }
                         .form_cont input {
-                            width: 290px;
+                            width: 260px;
                         }
                         #login {
                             width: 300px;
@@ -1114,6 +1230,35 @@
                             top: 72%;
                             left: 14%;
                             z-index: 1;
+                        }
+                        .Password_Setting_cont {
+                            font-size: 12px;
+                            font-weight: 400;
+                            width: 340px;
+                        }
+                        .member_infor_tx {
+                            margin-left: 10px;
+                            margin-top: 50px;
+                        }
+                        .member_infor_cont input {
+
+                            width: 200px;
+                        }
+                        .member_infor_cont img {
+                            margin-right: 15px;
+                        }
+                        .date_cont {
+                            padding: 0;
+                        }
+                        .order_table {
+                            width: 100%;
+                        }
+                        .order_cont {
+                            padding-left: 3%;
+                            height: 200px;
+                        }
+                        .order_date_top_zt {
+                            margin-left: 45px
                         }
                     }
 
@@ -1185,5 +1330,52 @@
                             line-height: 35px;
                             margin-top: 0;
                             margin-bottom: 0;
+                        }
+                        .Password_Setting_cont td {
+                            text-align: left;
+                        }
+                        .form_cont input {
+                            width: 200px;
+                        }
+                        .member_infor ol {
+                            margin-left: 15px;
+                        }
+                        .huizhang li {
+
+                            margin-left: 2%;
+                        }
+                        .order_cont {
+                            padding-left: 20px;
+                            padding-top: 25px;
+                            height: 340px;
+                            background: #fff;
+                        }
+                        .date_cont .order_del {
+                            float: right;
+                            margin-right: 14px;
+                        }
+                        .order_top_date {
+                            margin-left: 4px;
+                        }
+                        .order_top_bh {
+                            margin-left: 4px;
+                        }
+                        .order_date {
+                            margin-left: 10px;
+                            line-height: 25px;
+                            margin-top: 15px;
+                        }
+                        .member_infor_cont li {
+                            font-size: 14px;
+                            margin: 35px 0;
+                        }
+                        .member_infor_cont li a {
+                            font-size: 14px;
+                        }
+                        .member_infor_cont img {
+                            margin-right: 5px;
+                        }
+                        .member_infor_cont input {
+                            width: 180px;
                         }
                     }

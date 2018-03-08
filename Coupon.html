@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <link rel='stylesheet' type='text/css' href='css/jquery.easy-gallery.css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+    <link rel="stylesheet" href="css/jquery-labelauty.css" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/lby-main.css" type="text/css" media="screen" charset="utf-8" />
     <!--//style sheet end here-->
 </head>
 
-<body id="game">
+<body>
     <div class="header-w3layouts">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
@@ -61,62 +63,69 @@
     </div>
     <div class="member_cont">
         <div class="personal_infor">
-            <p class="top_msg">更多精彩徽章请在APP中查看</p>
-            <div class="member_infor">
-                <div class="float_left" style="margin-left: 60px;margin-top: 50px">
-                    <img src="image/member/tx.png">
+            <div class="container">
+                <p class="top_msg">更多精彩徽章请在APP中查看</p>
+                <div class="member_infor">
+                    <div class="col-md-5 col-sm-5 col-xs-12">
+                        <div class="float_left member_infor_tx">
+                            <img src="image/member/tx.png">
+                        </div>
+                        <ol class=" float_left">
+                            <li style="font-size: 18px;font-weight: 600;">SOREAL01010</li>
+                            <li style="font-size: 18px;font-weight: 600; color: #12c2fe">积分 500</li>
+                            <li style="font-size: 14px;">v12 <span></span></li>
+                        </ol>
+                    </div>
+                    <ul class="huizhang col-md-7 col-sm-7 col-xs-12">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
-                <ul class=" float_left" style="margin-left: 40px;margin-top: 68px">
-                    <li style="font-size: 18px;font-weight: 600;">SOREAL01010</li>
-                    <li style="font-size: 18px;font-weight: 600; color: #12c2fe">积分 500</li>
-                    <li style="font-size: 14px;">v12 <span></span></li>
-                </ul>
-                <ul class="huizhang">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
             </div>
         </div>
         <div class="clear"></div>
-        <div class="member_cont_date">
-            <div class="member_list">
-                <ul>
-                    <li >订单信息</li>
-                    <li class="selected">我的优惠券</li>
-                    <li>会员信息</li>
-                    <li>账号设置</li>
-                </ul>
-            </div>
-            <div class="date_cont">
-                <div class="order_list clear">
-                   
-                   
-                    <table class="order_table">
-                        <thead>
-                            <tr>
-                                <td>票券名称</td>
-                                <td>金额</td>
-                                <td>有效期</td>
-                                <td>使用规则</td>
-                                <td>状态</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h3>双11消费券</h3>
-                                    
-                                </td>
-                                <td><span>¥50</span></td>
-                                <td><p>2017-11-11 00：00：00开始</p>
-                                    <p>2017-11-11 23：59：59截止</p></td>
-                                <td>><p>仅限双11当天在店内消费</p>
-                                    <p>不包含酒水饮料消费</p></td>
-                                <td style="border: 0"><span style="color: #333;">已失效</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <div class="member_cont_date row">
+            <div class="container">
+                <div class="member_list col-md-3 col-sm-3 col-xs-12">
+                    <ul>
+                        <li>订单信息</li>
+                        <li class="selected">我的优惠券</li>
+                        <li>会员信息</li>
+                        <li >账号设置</li>
+                    </ul>
+                </div>
+                <div class="date_cont col-md-9 col-sm-9 col-xs-12">
+                    <div class="order_list clear">
+                        <table class="order_table">
+                            <thead>
+                                <tr>
+                                    <td>票券名称</td>
+                                    <td>金额</td>
+                                    <td>有效期</td>
+                                    <td>使用规则</td>
+                                    <td>状态</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h3>双11消费券</h3>
+                                    </td>
+                                    <td><span>¥50</span></td>
+                                    <td>
+                                        <p>2017-11-11 00：00：00开始</p>
+                                        <p>2017-11-11 23：59：59截止</p>
+                                    </td>
+                                    <td>
+                                        <p>仅限双11当天在店内消费</p>
+                                        <p>不包含酒水饮料消费</p>
+                                    </td>
+                                    <td style="border: 0"><span style="color: #333;">已失效</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -236,6 +245,13 @@
     });
     </script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <script type="text/javascript" src="js/jquery-labelauty.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(".to-labelauty").labelauty({ minimum_width: "155px" });
+        $(".to-labelauty-icon").labelauty({ label: false });
+    });
+    </script>
     <!-- //for-bottom-to-top smooth scrolling -->
 </body>
 
